@@ -239,6 +239,23 @@ public:
             dir = 'U';
         }
     }
+    
+    // Printing x,y,z co-ordinates and dir
+    void getPosition()
+    {
+        cout << "Current Position: (" << x << ", " << y << ", " << z << "), dir: " << dir << endl;
+    }
 
+    // Printing Final Position of SpaceCraft
+    void FinalPosition()
+    {
+        cout << "Final Position: (" << x << ", " << y << ", " << z << ")" << endl;
+    }
+
+    // Printing Final dir of SpaceCraft
+    void Finaldir()
+    {
+        cout << "Final dir: " << dir << endl;
+    }
 
 };
