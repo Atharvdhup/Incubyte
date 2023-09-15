@@ -20,4 +20,30 @@ public:
         org = origin;
     }
 
+     // Moving  SpaceCraft Forward
+    void Forward() // f
+    {
+        
+        if (dir=='N')
+        {
+            y++;
+        }else if (dir=='S')
+        {
+            y--;
+        }else if (dir=='E')
+        {
+            x++;
+        }else if (dir=='W')
+        {
+            x--;
+        }else if (dir=='U')
+        {
+            z++;
+        }else if (dir=='D')
+        {
+            z--;
+        }
+        
+    }
+
 };
