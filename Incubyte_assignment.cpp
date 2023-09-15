@@ -73,4 +73,79 @@ public:
         
     }
 
+    // Moving SpaceCraft to  left
+    void takeLeft() // l
+    {
+        switch (dir)
+        {
+        case 'N':
+            dir = 'W';
+            org = 'W';
+            break;
+        case 'S':
+            dir = 'E';
+            org = 'E';
+            break;
+        case 'E':
+            dir = 'N';
+            org = 'N';
+            break;
+        case 'W':
+            dir = 'S';
+            org = 'S';
+            break;
+        case 'D':
+            if (org == 'N')
+            {
+                dir = 'W';
+                org = 'W';
+                break;
+            }
+            else if (org == 'S')
+            {
+                dir = 'E';
+                org = 'E';
+                break;
+            }
+            else if (org == 'E')
+            {
+                dir = 'N';
+                org = 'N';
+                break;
+            }
+            else
+            {
+                dir = 'S';
+                org = 'S';
+                break;
+            }
+        case 'U':
+            if (org == 'N')
+            {
+                dir = 'W';
+                org = 'W';
+                break;
+            }
+            else if (org == 'S')
+            {
+                dir = 'E';
+                org = 'E';
+                break;
+            }
+            else if (org == 'E')
+            {
+                dir = 'N';
+                org = 'N';
+                break;
+            }
+            else
+            {
+                dir = 'S';
+                org = 'S';
+                break;
+            }
+        }
+    }
+
+
 };
