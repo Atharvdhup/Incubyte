@@ -146,6 +146,80 @@ public:
             }
         }
     }
+    
+    // Moving SpaceCraft to Right
+    void takeRight() // r
+    {
 
+        switch (dir)
+        {
+        case 'N':
+            dir = 'E';
+            org = 'E';
+            break;
+        case 'S':
+            dir = 'W';
+            org = 'W';
+            break;
+        case 'E':
+            dir = 'S';
+            org = 'S';
+            break;
+        case 'W':
+            dir = 'N';
+            org = 'N';
+            break;
+        case 'D':
+            if (org == 'N')
+            {
+                dir = 'E';
+                org = 'E';
+                break;
+            }
+            else if (org == 'S')
+            {
+                dir = 'W';
+                org = 'W';
+                break;
+            }
+            else if (org == 'E')
+            {
+                dir = 'S';
+                org = 'S';
+                break;
+            }
+            else
+            {
+                dir = 'N';
+                org = 'N';
+                break;
+            }
+        case 'U':
+            if (org == 'N')
+            {
+                dir = 'E';
+                org = 'E';
+                break;
+            }
+            else if (org == 'S')
+            {
+                dir = 'W';
+                org = 'W';
+                break;
+            }
+            else if (org == 'E')
+            {
+                dir = 'S';
+                org = 'S';
+                break;
+            }
+            else
+            {
+                dir = 'N';
+                org = 'N';
+                break;
+            }
+        }
+    }
 
 };
