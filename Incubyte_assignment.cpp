@@ -259,3 +259,57 @@ public:
     }
 
 };
+
+
+int main()
+{
+    int x = 0, y = 0, z = 0;
+    char dir = 'N';
+    Spacecraft Chandrayaan3(x, y, z, dir, 'N');
+
+    string instruct;
+    cin >> instruct;
+    cout << endl;
+    // Chandrayaan3.getPosition();
+    for (int i = 0; i < instruct.length(); i++)
+    {
+        char code = instruct[i];
+        switch (code)
+        {
+        case 'f':
+            Chandrayaan3.Forward();
+            Chandrayaan3.getPosition();
+            break;
+        case 'b':
+            Chandrayaan3.Backward();
+            Chandrayaan3.getPosition();
+            break;
+        case 'l':
+            Chandrayaan3.takeLeft();
+            Chandrayaan3.getPosition();
+            break;
+        case 'r':
+            Chandrayaan3.takeRight();
+            Chandrayaan3.getPosition();
+            break;
+        case 'u':
+            Chandrayaan3.takeupward();
+            Chandrayaan3.getPosition();
+            break;
+        case 'd':
+            Chandrayaan3.takedownword();
+            Chandrayaan3.getPosition();
+            break;
+        }
+    }
+
+    // Chandrayaan3.getPosition();
+    cout << endl;
+
+    Chandrayaan3.FinalPosition();
+    cout << endl;
+
+    Chandrayaan3.Finaldir();
+    cout << endl;
+    return 0;
+}
