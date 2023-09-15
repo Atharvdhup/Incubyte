@@ -231,4 +231,14 @@ public:
         }
     }
 
+     // Moving SpaceCraft Upward
+    void takeupward() // u
+    {
+        if (dir != 'U')
+        {
+            dir = 'U';
+        }
+    }
+
+
 };
