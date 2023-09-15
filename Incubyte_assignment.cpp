@@ -222,4 +222,13 @@ public:
         }
     }
 
+     // Moving SpaceCraft Downward
+    void takedownword() // d
+    {
+        if (dir != 'D')
+        {
+            dir = 'D';
+        }
+    }
+
 };
